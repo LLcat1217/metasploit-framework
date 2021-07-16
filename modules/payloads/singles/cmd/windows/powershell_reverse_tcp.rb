@@ -2,10 +2,11 @@
 # This module requires Metasploit: https://metasploit.com/download
 # Current source: https://github.com/rapid7/metasploit-framework
 ##
+require 'rex/powershell'
 
 module MetasploitModule
 
-  CachedSize = 1561
+  CachedSize = :dynamic
 
   include Msf::Payload::Single
   include Rex::Powershell::Command

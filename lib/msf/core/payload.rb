@@ -7,12 +7,11 @@ module Msf
 #
 # This class represents the base class for a logical payload.  The framework
 # automatically generates payload combinations at runtime which are all
-# extended for this Payload as a base class.
+# extended from this Payload as a base class.
 #
 ###
 class Payload < Msf::Module
 
-  require 'rex/payloads/win32'
 
   # Platform specific includes
   require 'metasploit/framework/compiler/mingw'
